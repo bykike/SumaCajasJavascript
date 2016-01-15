@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script language="javascript">
+   function suma()
+   {
+      var num1 = eval(document.getElementById("uno").value);
+      if(num1==undefined) num1 = 0;
+      var num2 = eval(document.getElementById("dos").value);
+      if(num2==undefined) num2 = 0;      
+      document.getElementById("res").value = num1 + num2;
+   }
+</script>
+<title>Suma</title>
+</head>
+
+<body>
+
+
+<form method="post" action="#">
+   <input type="text" id="uno" onblur="javascript:suma();" />
+   <input type="text" id="dos" onblur="javascript:suma();" />
+   <input type="text" id="res" />
+</form>
+
+
+</body>
+</html>
